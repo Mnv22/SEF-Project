@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+.background {
+    -fx-background-color: #F7E6DC;
+}
+
+.title {
+    -fx-font-family: 'Cinzel', serif;
+    -fx-text-fill: #800020;
+    -fx-font-weight: bold;
+}
+
+.mainButton {
+    -fx-font-family: 'Cinzel', serif;
+    -fx-text-fill: #F7E6DC;
+    -fx-background-color: #800020;
+}
+
+.mainButton:hover {
+    -fx-background-color: #99334d;
+    -fx-font-size: 32;
+    -fx-effect: dropshadow(gaussian,#c08090,15,0,0,0);
+}
+
+.mainButton:pressed {
+    -fx-font-size: 32;
+}
+
+.mainButton:focused {
+    -fx-font-size: 32;
+}
+
+.textField {
+    -fx-font-family: 'Cinzel', serif;
+    -fx-text-fill: #800020;
+    -fx-background-color: #F7E6DC;
+    -fx-border-style: solid;
+    -fx-border-color: #800020;
+    -fx-border-width: 0 0 3px 0;
+}
+
+.textField:focused {
+    -fx-font-size: 24;
+}
+
+.link {
+    -fx-prompt-text-fill: #800020;
+    -fx-font-family: 'Cinzel', serif;
+    -fx-text-fill: #800020;
+    -fx-background-color: #F7E6DC;
+}
+
+.link:hover {
+    -fx-text-fill: #c08090;
+    -fx-font-size: 24;
+}
+
+.link:focused {
+    -fx-text-fill: #c08090;
+    -fx-font-size: 24;
+}

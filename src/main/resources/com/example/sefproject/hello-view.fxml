@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.sefproject.Controller">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="458.0" layoutY="70.0" styleClass="title" text="Paper &amp; Quill">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font></Label>
+      <TextField layoutX="117.0" layoutY="279.0" prefHeight="54.0" prefWidth="434.0" promptText="Username" styleClass="textField">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="117.0" layoutY="394.0" prefHeight="54.0" prefWidth="434.0" promptText="Password" styleClass="textField">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <AnchorPane layoutX="77.0" layoutY="497.0" prefHeight="116.0" prefWidth="515.0">
+         <children>
+            <Button layoutX="20.5" layoutY="19.5" mnemonicParsing="false" prefHeight="78.0" prefWidth="471.0" styleClass="mainButton" text="Log In">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Circle fill="#f7e6dc" layoutX="491.0" layoutY="19.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Circle fill="#f7e6dc" layoutX="491.0" layoutY="96.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Circle fill="#f7e6dc" layoutX="20.0" layoutY="96.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Circle fill="#f7e6dc" layoutX="20.0" layoutY="19.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Line endX="281.0" layoutX="166.0" layoutY="30.0" startX="-100.0" stroke="#f7e6dc" strokeWidth="2.0" />
+            <Line endX="281.0" layoutX="166.0" layoutY="87.0" startX="-100.0" stroke="#f7e6dc" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="277.0" layoutY="613.0" mnemonicParsing="false" styleClass="link" text="Sign Up">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -10,7 +10,9 @@ public class Application extends javafx.application.Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
+        scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
+        stage.setResizable(false);
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
