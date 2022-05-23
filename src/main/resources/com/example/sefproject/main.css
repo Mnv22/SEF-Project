@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@font-face {
+    font-family: 'Cinzel';
+    font-weight: 400;
+    src:url("Cinzel.ttf");
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    src:url("Cinzel-Bold.ttf");
+}
 
 .background {
     -fx-background-color: #F7E6DC;
@@ -7,27 +17,31 @@
 .title {
     -fx-font-family: 'Cinzel', serif;
     -fx-text-fill: #800020;
-    -fx-font-weight: bold;
+    -fx-font-weight: 700;
 }
 
 .mainButton {
     -fx-font-family: 'Cinzel', serif;
     -fx-text-fill: #F7E6DC;
     -fx-background-color: #800020;
+    -fx-font-weight: 700;
 }
 
 .mainButton:hover {
     -fx-background-color: #99334d;
     -fx-font-size: 32;
     -fx-effect: dropshadow(gaussian,#c08090,15,0,0,0);
+    -fx-font-weight: 700;
 }
 
 .mainButton:pressed {
     -fx-font-size: 32;
+    -fx-font-weight: 700;
 }
 
 .mainButton:focused {
     -fx-font-size: 32;
+    -fx-font-weight: 700;
 }
 
 .textField {
@@ -47,15 +61,18 @@
     -fx-prompt-text-fill: #800020;
     -fx-font-family: 'Cinzel', serif;
     -fx-text-fill: #800020;
+    -fx-font-weight: 700;
     -fx-background-color: #F7E6DC;
 }
 
 .link:hover {
     -fx-text-fill: #99334d;
+    -fx-font-weight: 700;
     -fx-font-size: 24;
 }
 
 .link:focused {
     -fx-text-fill: #99334d;
+    -fx-font-weight: 700;
     -fx-font-size: 24;
 }
