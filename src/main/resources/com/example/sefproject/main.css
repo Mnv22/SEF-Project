@@ -51,11 +51,11 @@
 }
 
 .link:hover {
-    -fx-text-fill: #c08090;
+    -fx-text-fill: #99334d;
     -fx-font-size: 24;
 }
 
 .link:focused {
-    -fx-text-fill: #c08090;
+    -fx-text-fill: #99334d;
     -fx-font-size: 24;
 }
