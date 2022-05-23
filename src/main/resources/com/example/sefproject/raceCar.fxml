@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -8,8 +9,6 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefproject.raceCar">
@@ -18,17 +17,7 @@
          <font>
             <Font name="System Bold" size="48.0" />
          </font></Label>
-      <AnchorPane layoutX="77.0" layoutY="497.0" prefHeight="116.0" prefWidth="515.0">
-         <children>
-            <Circle fill="#f7e6dc" layoutX="491.0" layoutY="19.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
-            <Circle fill="#f7e6dc" layoutX="491.0" layoutY="96.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
-            <Circle fill="#f7e6dc" layoutX="20.0" layoutY="96.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
-            <Circle fill="#f7e6dc" layoutX="20.0" layoutY="19.0" radius="19.5" stroke="TRANSPARENT" strokeType="INSIDE" />
-            <Line endX="281.0" layoutX="166.0" layoutY="30.0" startX="-100.0" stroke="#f7e6dc" strokeWidth="2.0" />
-            <Line endX="281.0" layoutX="166.0" layoutY="87.0" startX="-100.0" stroke="#f7e6dc" strokeWidth="2.0" />
-         </children>
-      </AnchorPane>
-      <GridPane layoutX="14.0" layoutY="160.0" prefHeight="590.0" prefWidth="1182.0">
+      <GridPane layoutX="6.0" layoutY="157.0" prefHeight="593.0" prefWidth="1190.0">
         <columnConstraints>
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="55.0" minWidth="10.0" prefWidth="55.0" />
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="357.3" minWidth="10.0" prefWidth="357.3" />
@@ -45,41 +34,65 @@
                <font>
                   <Font size="32.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
             <Button fx:id="LabelCenter" mnemonicParsing="false" styleClass="link" text="Elf" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
                   <Font size="32.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <ImageView fx:id="ImageCenter" fitHeight="436.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+            <ImageView fx:id="ImageCenter" fitHeight="436.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" styleClass="imageCar" GridPane.columnIndex="2">
                <image>
                   <Image url="@Images/Elf.png" />
                </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
-            <ImageView fx:id="ImageRight" fitHeight="436.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+            <ImageView fx:id="ImageRight" fitHeight="436.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" styleClass="imageCar" GridPane.columnIndex="3">
                <image>
                   <Image url="@Images/Halfling.png" />
                </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
             <Button fx:id="LabelRight" mnemonicParsing="false" styleClass="link" text="Halfling" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font size="32.0" />
                </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </Button>
-            <Button id="hidden" fx:id="LeftButton" mnemonicParsing="false" onAction="#leftArrow" styleClass="link" text="&lt;" GridPane.valignment="CENTER">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Button>
-            <Button fx:id="RightButton" mnemonicParsing="false" onAction="#rightArrow" styleClass="link" text="&gt;" GridPane.columnIndex="4" GridPane.valignment="CENTER">
-               <font>
-                  <Font size="32.0" />
-               </font>
-            </Button>
-            <ImageView fx:id="ImageLeft" fitHeight="436.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+            <ImageView fx:id="ImageLeft" fitHeight="436.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" styleClass="imageCar" GridPane.columnIndex="1">
                <image>
                   <Image url="@Images/Dwarf.png" />
                </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView id="hidden" fx:id="LeftButton" fitHeight="150.0" fitWidth="58.0" onMouseClicked="#leftArrow" pickOnBounds="true" preserveRatio="true" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@Images/left.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="RightButton" fitHeight="150.0" fitWidth="58.0" onMouseClicked="#rightArrow" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.valignment="CENTER">
+               <image>
+                  <Image url="@Images/right.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
          </children>
       </GridPane>

@@ -26,9 +26,9 @@ public class raceCar {
     @FXML
     private Button LabelRight;
     @FXML
-    private Button RightButton;
+    private ImageView RightButton;
     @FXML
-    private Button LeftButton;
+    private ImageView LeftButton;
 
     public void rightArrow() {
         current++;
