@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Cinzel';
     font-weight: 400;
-    src:url("Cinzel.ttf");
+    src:url("fonts/Cinzel.ttf");
 }
 
 @font-face {
     font-family: 'Cinzel';
     font-weight: 700;
-    src:url("Cinzel-Bold.ttf");
+    src:url("fonts/Cinzel-Bold.ttf");
 }
 
 .background {
@@ -69,11 +69,19 @@
 .link:hover {
     -fx-text-fill: #99334d;
     -fx-font-weight: 700;
-    -fx-font-size: 24;
+    -fx-font-size: 32;
 }
 
 .link:focused {
     -fx-text-fill: #99334d;
     -fx-font-weight: 700;
-    -fx-font-size: 24;
+    -fx-font-size: 32;
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+#shown {
+    visibility: visible;
 }
