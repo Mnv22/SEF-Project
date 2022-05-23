@@ -45,6 +45,7 @@
 }
 
 .textField {
+    -fx-prompt-text-fill: #99334d;
     -fx-font-family: 'Cinzel', serif;
     -fx-text-fill: #800020;
     -fx-background-color: #F7E6DC;
