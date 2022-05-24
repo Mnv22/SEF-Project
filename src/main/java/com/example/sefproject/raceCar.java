@@ -1,9 +1,17 @@
 package com.example.sefproject;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.effect.BlurType;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+
+import java.io.IOException;
 
 public class raceCar {
 
@@ -29,6 +37,8 @@ public class raceCar {
     private ImageView RightButton;
     @FXML
     private ImageView LeftButton;
+    @FXML
+    private Button hiddenButton;
 
     public void rightArrow() {
         current++;
@@ -90,4 +100,8 @@ public class raceCar {
 
     }
 
+    public void switchtoRaceDesc(ActionEvent event) throws IOException {
+        SceneSwitcher RaceDesc = new SceneSwitcher();
+        RaceDesc.switchScene("raceDesc.fxml",event);
+    }
 }

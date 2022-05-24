@@ -11,7 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefproject.login">
    <children>
-      <Label layoutX="458.0" layoutY="70.0" styleClass="title" text="Papers &amp; Quill">
+      <Label layoutX="458.0" layoutY="70.0" styleClass="title" text="RaceDesc">
          <font>
             <Font name="System Bold" size="48.0" />
          </font>

@@ -87,5 +87,9 @@
 }
 
 .imageCar:hover {
-    -fx-effect: dropshadow(gaussian,#c08090,100,0,0,0);
+    -fx-effect: dropshadow(gaussian,#800020,25,0,0,0);
+}
+
+.hiddenButton {
+    -fx-opacity: 1;
 }

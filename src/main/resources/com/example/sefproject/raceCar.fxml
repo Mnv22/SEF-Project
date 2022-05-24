@@ -30,7 +30,7 @@
             <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" valignment="TOP" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="LabelLeft" mnemonicParsing="false" styleClass="link" text="Dwarf" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="LabelLeft" mnemonicParsing="false" onAction="#switchtoRaceDesc" styleClass="link" text="Dwarf" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="32.0" />
                </font>
@@ -38,7 +38,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="LabelCenter" mnemonicParsing="false" styleClass="link" text="Elf" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+            <Button fx:id="LabelCenter" mnemonicParsing="false" onAction="#switchtoRaceDesc" styleClass="link" text="Elf" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <font>
                   <Font size="32.0" />
                </font>
@@ -51,7 +51,7 @@
                   <Image url="@Images/Elf.png" />
                </image>
                <cursor>
-                  <Cursor fx:constant="HAND" />
+                  <Cursor fx:constant="DEFAULT" />
                </cursor>
             </ImageView>
             <ImageView fx:id="ImageRight" fitHeight="436.0" fitWidth="354.0" pickOnBounds="true" preserveRatio="true" styleClass="imageCar" GridPane.columnIndex="3">
@@ -59,10 +59,10 @@
                   <Image url="@Images/Halfling.png" />
                </image>
                <cursor>
-                  <Cursor fx:constant="HAND" />
+                  <Cursor fx:constant="DEFAULT" />
                </cursor>
             </ImageView>
-            <Button fx:id="LabelRight" mnemonicParsing="false" styleClass="link" text="Halfling" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button fx:id="LabelRight" mnemonicParsing="false" onAction="#switchtoRaceDesc" styleClass="link" text="Halfling" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font size="32.0" />
                </font>
@@ -75,7 +75,7 @@
                   <Image url="@Images/Dwarf.png" />
                </image>
                <cursor>
-                  <Cursor fx:constant="HAND" />
+                  <Cursor fx:constant="DEFAULT" />
                </cursor>
             </ImageView>
             <ImageView id="hidden" fx:id="LeftButton" fitHeight="150.0" fitWidth="58.0" onMouseClicked="#leftArrow" pickOnBounds="true" preserveRatio="true" GridPane.valignment="CENTER">
