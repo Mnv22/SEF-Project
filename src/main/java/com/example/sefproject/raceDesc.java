@@ -1,15 +1,20 @@
 package com.example.sefproject;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class raceDesc {
 
@@ -40,6 +45,13 @@ public class raceDesc {
             "Dwarves","Elves","Halflings"
             ,"Humans","Dragonborn","Gnomes",
             "Half-Elves","Half-Orcs","Tieflings" };
+
+    public void start(String text) throws IOException {
+        while (!text.equals(races[current])) {
+            current++;
+        }
+        switchDesc(current);
+    }
 
     public void goRight() throws IOException {
       current++;

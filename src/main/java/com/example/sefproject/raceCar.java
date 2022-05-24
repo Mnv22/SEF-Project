@@ -3,6 +3,7 @@ package com.example.sefproject;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.effect.BlurType;
 import javafx.scene.effect.DropShadow;
@@ -10,12 +11,14 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class raceCar {
 
-    private int current = 1;
+    private int current = 0;
     private String[] races = new String[] {
             "Dwarf","Elf","Halfling"
             ,"Human","Dragonborn","Gnome",
@@ -51,7 +54,7 @@ public class raceCar {
     }
 
     public void switchCar(int now) {
-        if (now == 1) {
+        if (now == 0) {
 
             Image left = new Image(getClass().getResourceAsStream("Images/Dwarf.png"));
             ImageLeft.setImage(left);
@@ -63,11 +66,14 @@ public class raceCar {
             LabelLeft.setText(races[0]);
             LabelCenter.setText(races[1]);
             LabelRight.setText(races[2]);
+            LabelLeft.setUserData(0);
+            LabelCenter.setUserData(1);
+            LabelRight.setUserData(2);
 
             LeftButton.setId("hidden");
         }
 
-        if (now == 2) {
+        if (now == 1) {
             Image left = new Image(getClass().getResourceAsStream("Images/Human.png"));
             ImageLeft.setImage(left);
             Image center = new Image(getClass().getResourceAsStream("Images/Dragonborn.png"));
@@ -79,11 +85,15 @@ public class raceCar {
             LabelCenter.setText(races[4]);
             LabelRight.setText(races[5]);
 
+            LabelLeft.setUserData(3);
+            LabelCenter.setUserData(4);
+            LabelRight.setUserData(5);
+
             RightButton.setId("shown");
             LeftButton.setId("shown");
         }
 
-        if (now == 3) {
+        if (now == 2) {
             Image left = new Image(getClass().getResourceAsStream("Images/Half-Elf.png"));
             ImageLeft.setImage(left);
             Image center = new Image(getClass().getResourceAsStream("Images/Half-Orc.png"));
@@ -95,13 +105,18 @@ public class raceCar {
             LabelCenter.setText(races[7]);
             LabelRight.setText(races[8]);
 
+            LabelLeft.setUserData(6);
+            LabelCenter.setUserData(7);
+            LabelRight.setUserData(8);
+
             RightButton.setId("hidden");
         }
 
     }
 
     public void switchtoRaceDesc(ActionEvent event) throws IOException {
+        String title = ((Button)event.getSource()).getText();
         SceneSwitcher RaceDesc = new SceneSwitcher();
-        RaceDesc.switchScene("raceDesc.fxml",event);
+        RaceDesc.switchSceneWithInfo("raceDesc.fxml",event,title);
     }
 }

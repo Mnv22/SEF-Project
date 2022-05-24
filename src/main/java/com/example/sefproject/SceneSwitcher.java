@@ -23,4 +23,23 @@ public class SceneSwitcher {
         stage.show();
         root.requestFocus();
     }
+
+    public void switchSceneWithInfo(String name, ActionEvent event,String info) throws IOException {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(name));
+        root = loader.load();
+
+        raceDesc rd = loader.getController();
+        rd.start(info);
+
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+        root.requestFocus();
+    }
+
+    public Stage getStage() {
+        return stage;
+    }
 }
