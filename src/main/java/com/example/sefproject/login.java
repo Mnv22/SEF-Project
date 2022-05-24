@@ -50,6 +50,11 @@ public class login {
         checkLogIn(event);
     }
 
+    public void switchToRegister(ActionEvent event) throws IOException {
+        SceneSwitcher scene = new SceneSwitcher();
+        scene.switchScene("register.fxml",event);
+    }
+
     private void checkLogIn(ActionEvent event)throws IOException{
         Application n= new Application();
         if(username.getText().toString().equals("nume")&&password.getText().toString().equals("parola")){
