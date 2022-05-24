@@ -47,15 +47,16 @@ public class login {
 
 
     public void userLogIn(ActionEvent event) throws IOException{
-        checkLogIn();
+        checkLogIn(event);
     }
 
-    private void checkLogIn()throws IOException{
+    private void checkLogIn(ActionEvent event)throws IOException{
         Application n= new Application();
         if(username.getText().toString().equals("nume")&&password.getText().toString().equals("parola")){
             wrongLogIN.setText("Succes");
 
-            n.changeScene("raceCar.fxml");
+            SceneSwitcher raceCar = new SceneSwitcher();
+            raceCar.switchScene("raceCar.fxml",event);
 
         }
 
