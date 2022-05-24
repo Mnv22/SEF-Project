@@ -62,7 +62,7 @@
       <AnchorPane layoutX="173.0" layoutY="429.0">
          <children>
             <RadioButton mnemonicParsing="false" styleClass="areYouDM" />
-            <Label layoutX="46.0" layoutY="12.0" styleClass="title" text="Are you a Dungeon Master?">
+            <Label layoutX="46.0" layoutY="6.0" styleClass="title" text="Are you a Dungeon Master?">
                <font>
                   <Font size="18.0" />
                </font>
