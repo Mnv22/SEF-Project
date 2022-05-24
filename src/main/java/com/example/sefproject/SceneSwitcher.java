@@ -23,4 +23,5 @@ public class SceneSwitcher {
         stage.show();
         root.requestFocus();
     }
+
 }

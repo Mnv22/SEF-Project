@@ -13,28 +13,13 @@ import javafx.event.ActionEvent;
 
 import java.io.IOException;
 
-
-/*public class login {
-
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-
-    public void switchToRace(ActionEvent event) throws IOException {
-        SceneSwitcher scene = new SceneSwitcher();
-        scene.switchScene("raceCar.fxml",event);
-    }
-}
-*/
-
 public class login {
-
-    public login(){
-
-    }
 
     @FXML
     private Button button;
+
+    @FXML
+    private Button button2;
 
     @FXML
     private Label wrongLogIN;
@@ -56,12 +41,14 @@ public class login {
     }
 
     private void checkLogIn(ActionEvent event)throws IOException{
-        Application n= new Application();
+       Application n = new Application();
+
         if(username.getText().toString().equals("nume")&&password.getText().toString().equals("parola")){
             wrongLogIN.setText("Succes");
 
-            SceneSwitcher raceCar = new SceneSwitcher();
-            raceCar.switchScene("raceCar.fxml",event);
+            SceneSwitcher scene = new SceneSwitcher();
+            scene.switchScene("raceCar.fxml",event);
+
 
         }
 

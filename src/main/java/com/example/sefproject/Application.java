@@ -17,7 +17,7 @@ public class Application extends javafx.application.Application {
 
         stg=stage;
 
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("raceDesc.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("login.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 1200, 800);
         scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());
@@ -30,11 +30,7 @@ public class Application extends javafx.application.Application {
         root.requestFocus();
     }
 
-    public void changeScene(String fxml)throws IOException{
-        Parent pane = FXMLLoader.load(getClass().getResource(fxml));
-        stg.getScene().setRoot(pane);
 
-    }
 //we will add some login features
     
     public static void main(String[] args) {
