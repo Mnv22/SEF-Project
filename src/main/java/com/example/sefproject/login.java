@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
 import java.io.IOException;
+import java.util.Map;
 
 public class login {
 
@@ -43,12 +44,13 @@ public class login {
     private void checkLogIn(ActionEvent event)throws IOException{
        Application n = new Application();
 
-        if(username.getText().toString().equals("nume")&&password.getText().toString().equals("parola")){
+        Map<String, String> mapFromFile = ValidateLogin.HashMapFromTextFile();
+
+        if(mapFromFile.containsValue(PasswordHashing.doHashing(username.getText().toString() + password.getText().toString()))){
             wrongLogIN.setText("Succes");
 
             SceneSwitcher scene = new SceneSwitcher();
             scene.switchScene("raceCar.fxml",event);
-
 
         }
 
