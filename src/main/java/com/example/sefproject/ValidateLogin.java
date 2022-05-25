@@ -1,6 +1,5 @@
 package com.example.sefproject;
-// Java program to reading
-// text file to HashMap
+
 
 import java.io.*;
 import java.util.*;
@@ -8,17 +7,6 @@ import java.util.*;
 class ValidateLogin {
     final static String filePath = "src/main/resources/com/example/sefproject/IDnPASS";
 
-  /* public static void main(String[] args)
-    {
-
-        // read text file to HashMap
-        Map<String, String> mapFromFile = HashMapFromTextFile();
-
-        // iterate over HashMap entries
-        for (Map.Entry<String, String> entry : mapFromFile.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-        }
-    }*/
 
     public static Map<String, String> HashMapFromTextFile()
     {
@@ -46,8 +34,6 @@ class ValidateLogin {
                 String name = parts[0].trim();
                 String number = parts[1].trim();
 
-                // put name, number in HashMap if they are
-                // not empty
                 if (!name.equals("") && !number.equals(""))
                     map.put(name, number);
             }
@@ -57,7 +43,6 @@ class ValidateLogin {
         }
         finally {
 
-            // Always close the BufferedReader
             if (br != null) {
                 try {
                     br.close();
