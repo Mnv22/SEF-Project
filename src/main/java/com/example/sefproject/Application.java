@@ -17,7 +17,7 @@ public class Application extends javafx.application.Application {
 
         stg=stage;
 
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("Dice.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root, 1200, 800);
         scene.getStylesheets().add(getClass().getResource("main.css").toExternalForm());

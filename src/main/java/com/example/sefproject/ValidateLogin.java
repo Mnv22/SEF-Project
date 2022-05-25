@@ -8,7 +8,7 @@ import java.util.*;
 class ValidateLogin {
     final static String filePath = "src/main/resources/com/example/sefproject/IDnPASS";
 
-   public static void main(String[] args)
+  /* public static void main(String[] args)
     {
 
         // read text file to HashMap
@@ -18,7 +18,7 @@ class ValidateLogin {
         for (Map.Entry<String, String> entry : mapFromFile.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
-    }
+    }*/
 
     public static Map<String, String> HashMapFromTextFile()
     {
