@@ -8,39 +8,39 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #F7E6DC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefproject.Dice">
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #F7E6DC;" stylesheets="@main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefproject.Dice">
    <children>
-      <Text layoutX="391.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ROLL DICE:" textAlignment="CENTER" wrappingWidth="417.3814338235294">
+      <Text layoutX="391.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="ROLL DICE:" textAlignment="CENTER" wrappingWidth="417.3814338235294">
          <font>
             <Font name="System Bold" size="56.0" />
          </font>
       </Text>
-      <Text layoutX="103.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D20:">
+      <Text layoutX="103.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="D20:">
          <font>
             <Font size="40.0" />
          </font>
       </Text>
-      <Text layoutX="103.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D12:">
+      <Text layoutX="103.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="D12:">
          <font>
             <Font size="40.0" />
          </font>
       </Text>
-      <Text layoutX="103.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D10:">
+      <Text layoutX="103.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="D10:">
          <font>
             <Font size="40.0" />
          </font>
       </Text>
-      <Text layoutX="648.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D8:">
+      <Text layoutX="648.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="D8:">
          <font>
             <Font size="40.0" />
          </font>
       </Text>
-      <Text layoutX="648.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D6:">
+      <Text layoutX="648.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="D6:">
          <font>
             <Font size="40.0" />
          </font>
       </Text>
-      <Text layoutX="648.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D4:">
+      <Text layoutX="648.0" layoutY="587.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitle" text="D4:">
          <font>
             <Font size="40.0" />
          </font>
@@ -370,41 +370,42 @@
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Label>
-      <Button layoutX="37.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll1d20" text="Button" />
-      <Button layoutX="130.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll2d20" text="Button" />
-      <Button layoutX="222.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll3d20" text="Button" />
-      <Button layoutX="404.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll5d20" text="Button" />
-      <Button layoutX="312.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll4d20" text="Button" />
-      <Button layoutX="495.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll6d20" text="Button" />
-      <Button layoutX="36.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll1d12" text="Button" />
-      <Button layoutX="129.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll2d12" text="Button" />
-      <Button layoutX="221.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll3d12" text="Button" />
-      <Button layoutX="403.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll5d12" text="Button" />
-      <Button layoutX="311.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll4d12" text="Button" />
-      <Button layoutX="494.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll6d12" text="Button" />
-      <Button layoutX="39.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll1d10" text="Button" />
-      <Button layoutX="132.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll2d10" text="Button" />
-      <Button layoutX="224.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll3d10" text="Button" />
-      <Button layoutX="406.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll5d10" text="Button" />
-      <Button layoutX="314.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll4d10" text="Button" />
-      <Button layoutX="497.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll6d10" text="Button" />
-      <Button layoutX="652.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll1d8" text="Button" />
-      <Button layoutX="732.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll2d8" text="Button" />
-      <Button layoutX="814.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll3d8" text="Button" />
-      <Button layoutX="976.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll5d8" text="Button" />
-      <Button layoutX="894.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll4d8" text="Button" />
-      <Button layoutX="1057.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll6d8" text="Button" />
-      <Button layoutX="649.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll1d6" text="Button" />
-      <Button layoutX="729.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll2d6" text="Button" />
-      <Button layoutX="811.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll3d6" text="Button" />
-      <Button layoutX="973.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll5d6" text="Button" />
-      <Button layoutX="891.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll4d6" text="Button" />
-      <Button layoutX="1054.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll6d6" text="Button" />
-      <Button layoutX="654.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll1d4" text="Button" />
-      <Button layoutX="734.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll2d4" text="Button" />
-      <Button layoutX="816.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll3d4" text="Button" />
-      <Button layoutX="978.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll5d4" text="Button" />
-      <Button layoutX="896.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll4d4" text="Button" />
-      <Button layoutX="1059.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll6d4" text="Button" />
+      <Button layoutX="37.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll1d20" styleClass="link" text="Roll" />
+      <Button layoutX="130.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll2d20" styleClass="link" text="Roll" />
+      <Button layoutX="222.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll3d20" styleClass="link" text="Roll" />
+      <Button layoutX="404.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll5d20" styleClass="link" text="Roll" />
+      <Button layoutX="312.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll4d20" styleClass="link" text="Roll" />
+      <Button layoutX="495.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll6d20" styleClass="link" text="Roll" />
+      <Button layoutX="36.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll1d12" styleClass="link" text="Roll" />
+      <Button layoutX="129.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll2d12" styleClass="link" text="Roll" />
+      <Button layoutX="221.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll3d12" styleClass="link" text="Roll" />
+      <Button layoutX="403.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll5d12" styleClass="link" text="Roll" />
+      <Button layoutX="311.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll4d12" styleClass="link" text="Roll" />
+      <Button layoutX="494.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll6d12" styleClass="link" text="Roll" />
+      <Button layoutX="39.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll1d10" styleClass="link" text="Roll" />
+      <Button layoutX="132.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll2d10" styleClass="link" text="Roll" />
+      <Button layoutX="224.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll3d10" styleClass="link" text="Roll" />
+      <Button layoutX="406.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll5d10" styleClass="link" text="Roll" />
+      <Button layoutX="314.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll4d10" styleClass="link" text="Roll" />
+      <Button layoutX="497.0" layoutY="701.0" mnemonicParsing="false" onAction="#roll6d10" styleClass="link" text="Roll" />
+      <Button layoutX="652.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll1d8" styleClass="link" text="Roll" />
+      <Button layoutX="732.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll2d8" styleClass="link" text="Roll" />
+      <Button layoutX="814.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll3d8" styleClass="link" text="Roll" />
+      <Button layoutX="976.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll5d8" styleClass="link" text="Roll" />
+      <Button layoutX="894.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll4d8" styleClass="link" text="Roll" />
+      <Button layoutX="1057.0" layoutY="309.0" mnemonicParsing="false" onAction="#roll6d8" styleClass="link" text="Roll" />
+      <Button layoutX="649.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll1d6" styleClass="link" text="Roll" />
+      <Button layoutX="729.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll2d6" styleClass="link" text="Roll" />
+      <Button layoutX="811.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll3d6" styleClass="link" text="Roll" />
+      <Button layoutX="973.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll5d6" styleClass="link" text="Roll" />
+      <Button layoutX="891.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll4d6" styleClass="link" text="Roll" />
+      <Button layoutX="1054.0" layoutY="519.0" mnemonicParsing="false" onAction="#roll6d6" styleClass="link" text="Roll" />
+      <Button layoutX="654.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll1d4" styleClass="link" text="Roll" />
+      <Button layoutX="734.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll2d4" styleClass="link" text="Roll" />
+      <Button layoutX="816.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll3d4" styleClass="link" text="Roll" />
+      <Button layoutX="978.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll5d4" styleClass="link" text="Roll" />
+      <Button layoutX="896.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll4d4" styleClass="link" text="Roll" />
+      <Button layoutX="1059.0" layoutY="696.0" mnemonicParsing="false" onAction="#roll6d4" styleClass="link" text="Roll" />
+      <Button layoutX="50.0" layoutY="51.0" mnemonicParsing="false" onAction="#goback" styleClass="link" text="Go back" />
    </children>
 </AnchorPane>

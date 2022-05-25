@@ -244,5 +244,9 @@ public class Dice {
         r6d4.setText(Integer.toString(rand.nextInt(1, 4)));
     }
 
+    public void goback(ActionEvent event) throws IOException {
+        SceneSwitcher scene = new SceneSwitcher();
+        scene.switchScene("Sheet.fxml",event);
+    }
 }
 

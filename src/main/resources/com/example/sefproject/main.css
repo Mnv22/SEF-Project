@@ -128,3 +128,11 @@ ChoiceBox {
     -fx-border-width: 2;
     -fx-border-radius: 20;
 }
+
+.purple {
+    -fx-background-color: #800020;
+}
+
+#white {
+    -fx-text-fill: #f7e6dc;
+}

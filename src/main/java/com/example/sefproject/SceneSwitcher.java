@@ -46,6 +46,7 @@ public class SceneSwitcher {
 
         Sheet rd = loader.getController();
         rd.continueChar(you);
+        rd.write();
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);

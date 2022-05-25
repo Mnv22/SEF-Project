@@ -73,8 +73,8 @@ public class Stats implements Initializable {
             you.Dex = Integer.parseInt(dex.getValue());
             you.name =  name.getText();
 
-            PrintWriter writer = new PrintWriter("characterSheet/+"you.name+".txt", "UTF-8");
-            writer.println(you.Stren);
+            /*PrintWriter writer = new PrintWriter(you.name+".txt", "UTF-8");
+            writer.println(String.valueOf(you.Stren));
             writer.println(you.Con);
             writer.println(you.Wis);
             writer.println(you.Int);
@@ -83,7 +83,7 @@ public class Stats implements Initializable {
             writer.println(you.name);
             writer.println(you.Race);
             writer.println(you.Class);
-            writer.close();
+            writer.close();*/
 
             SceneSwitcher switcher = new SceneSwitcher();
             switcher.CswitchScene("Sheet.fxml",event,you);
