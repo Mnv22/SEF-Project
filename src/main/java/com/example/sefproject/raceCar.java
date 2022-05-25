@@ -1,20 +1,12 @@
 package com.example.sefproject;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
-import javafx.scene.effect.BlurType;
-import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
-import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 public class raceCar {
 
@@ -117,6 +109,6 @@ public class raceCar {
     public void switchtoRaceDesc(ActionEvent event) throws IOException {
         String title = ((Button)event.getSource()).getText();
         SceneSwitcher RaceDesc = new SceneSwitcher();
-        RaceDesc.switchSceneWithInfo("raceDesc.fxml",event,title);
+        RaceDesc.switchSceneForRace("raceDesc.fxml",event,title);
     }
 }

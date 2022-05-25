@@ -119,3 +119,12 @@
     -fx-border-style: solid;
     -fx-border-radius: 30;
 }
+
+ChoiceBox {
+    -fx-background-color: #f7e6dc;
+    -fx-font-family: Cinzel;
+    -fx-border-style: solid;
+    -fx-border-color: #800020;
+    -fx-border-width: 2;
+    -fx-border-radius: 20;
+}

@@ -2,23 +2,18 @@ package com.example.sefproject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class raceDesc {
+public class classDesc {
 
     @FXML
     private ImageView IV;
@@ -30,19 +25,29 @@ public class raceDesc {
     private Label desc;
 
     @FXML
+    private Button link;
+
+    @FXML
     private ImageView rightArrow;
 
     @FXML
     private ImageView leftArrow;
 
     private int current = 0;
-    private String[] races = new String[] {
-            "Dwarf","Elf","Halfling"
-            ,"Human","Dragonborn","Gnome",
-            "Half-Elf","Half-Orc","Tiefling" };
+    private String[] classes = new String[] {
+            "Barbarian","Bard","Cleric"
+            ,"Druid","Fighter","Monk",
+            "Paladin","Ranger","Rogue",
+            "Sorcerer","Warlock","Wizard"};
+
+    Character you = new Character();
+
+    public void continueChar(Character old) {
+        you.Race = old.Race;
+    }
 
     public void start(String text) throws IOException {
-        while (!text.equals(races[current])) {
+        while (!text.equals(classes[current])) {
             current++;
         }
         switchDesc(current);
@@ -78,29 +83,28 @@ public class raceDesc {
         if (now == 0) {
             leftArrow.setId("hidden");
         }
-        if(now == 8) {
+        if(now == 11) {
             rightArrow.setId("hidden");
         }
 
-        subtitle.setText(races[now]);
-        Image image = new Image(getClass().getResourceAsStream("Images/"+races[now]+".png"));
+        subtitle.setText(classes[now]);
+        Image image = new Image(getClass().getResourceAsStream("Images/"+ classes[now]+".png"));
         String text = "";
-        desc.setText(read(text,"src/main/resources/com/example/sefproject/raceDescription/"+races[now]+".txt"));
+        desc.setText(read(text,"src/main/resources/com/example/sefproject/classDescription/"+ classes[now]+".txt"));
         IV.setImage(image);
     }
 
     public void switchtoClassCar(ActionEvent event) throws IOException {
-
-        Character you = new Character();
-        you.Race = current;
-
         SceneSwitcher switcher = new SceneSwitcher();
-        switcher.UswitchScene("classCar.fxml",event,you);
+        switcher.switchScene("classCar.fxml",event);
     }
 
-    public void switchtoRaceCar(ActionEvent event) throws IOException {
+    public void switchtoStats(ActionEvent event) throws IOException {
+        you.Class = current;
         SceneSwitcher switcher = new SceneSwitcher();
-        switcher.switchScene("raceCar.fxml",event);
+        switcher.WswitchScene("Stats.fxml",event,you);
     }
+
+
 
 }

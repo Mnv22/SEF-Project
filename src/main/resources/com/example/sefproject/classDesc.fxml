@@ -14,11 +14,11 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefproject.raceDesc">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="background" stylesheets="@main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sefproject.classDesc">
    <children>
       <AnchorPane layoutX="342.0" layoutY="670.0" prefHeight="116.0" prefWidth="515.0">
          <children>
-            <Button layoutX="20.5" layoutY="19.5" mnemonicParsing="false" onAction="#switchtoClassCar" prefHeight="78.0" prefWidth="471.0" styleClass="mainButton" text="Choose as race">
+            <Button layoutX="20.5" layoutY="19.5" mnemonicParsing="false" onAction="#switchtoStats" prefHeight="78.0" prefWidth="471.0" styleClass="mainButton" text="Choose as race">
                <font>
                   <Font size="32.0" />
                </font>
@@ -92,12 +92,12 @@
             </ImageView>
          </children>
       </GridPane>
-      <Label layoutX="362.0" layoutY="78.0" styleClass="title" text="Choose your Race:">
+      <Label layoutX="362.0" layoutY="78.0" styleClass="title" text="Choose your Class:">
          <font>
             <Font name="Baskerville Old Face" size="48.0" />
          </font>
       </Label>
-      <Button layoutX="44.0" layoutY="26.0" mnemonicParsing="false" onAction="#switchtoRaceCar" styleClass="link" text="back">
+      <Button layoutX="44.0" layoutY="26.0" mnemonicParsing="false" onAction="#switchtoClassCar" styleClass="link" text="back">
          <font>
             <Font size="32.0" />
          </font>
